@@ -8,6 +8,7 @@ import 'aos/dist/aos.css';
 import Onda2 from './components/onda2';
 import SideBar from './components/sidebar'
 import Header from './components/header';
+import Header1 from './components/header1';
 
 
 const HomePage: React.FC = () => {
@@ -17,20 +18,20 @@ const HomePage: React.FC = () => {
       once: false,
       mirror: true,
       anchorPlacement: 'center-center',
-      duration: 400
+      duration: 400,
+      offset: 0
     });
   }, []);
   return (
-    <div className='bg-gradient-custom ' >
-      <Header/>
+    <div className='bg-gradient-custom' >
       <div id="home" className='bg-gradient-custom container'>
       <Aside/>
-        <div className='flex justify-between '>
-          <div className='animate-[tada_1s_ease-in-out]'>
+        <div className='flex justify-between'>
+          <div className='animate-[tada_1s_ease-in-out] mt-32'>
             <p className='text-7xl font-bold ml-[200px] mt-[100px] [text-shadow:_0_8px_0_rgb(0_0_0_/_40%)]'> Olá! <br></br>Sou o Henrique, <br></br> desenvolvedor front-end</p>
             <p className='ml-[200px] text-4xl w-[600px] mt-4 [text-shadow:_0_-5px_0_rgb(0_0_0_/_40%)]'>Apaixonado por criar e estilizar sites e aplicativos mobile, com proficiência em tailwind, css, html e react.</p>
           </div>
-          <div className='mr-48'>
+          <div className='mr-48 mt-32'>
               <nav>
                 <ul className="text-7xl font-thin space-x-0 space-y-2 mr-[181px] mt-[131px] [text-shadow:_0_8px_0_rgb(0_0_0_/_40%)] animate-[spinner-grow_1s_ease-in-out]">
                 <li><a href='#sobre' className=" hover:before:scale-x-100 hover:before:origin-left relative before:w-full before:h-1 before:origin-right before:transition-transform before:duration-300 before:scale-x-0 before:bg-green-400 before:absolute before:left-0 before:bottom-0 ">Sobre</a></li>
@@ -43,6 +44,7 @@ const HomePage: React.FC = () => {
           </div>
         </div>
       </div>
+      <Header/>
       <div id="sobre" className='bg-sobre container mb-'>
       <WaveSVG/>
         <div className='ml-[210px] flex'>
@@ -129,9 +131,29 @@ const HomePage: React.FC = () => {
       <div id="projetos">
       <div className='container bg-swirl'>
       <Onda2/>
-        <div className='flex mt-[-80px]'>
+        <div id='primeira linha' className='flex mt-[-80px] space-x-[500px] ml-[100px]' >
           {/* Primeiro container, bee hive */}
-        <div className="relative group duration-500 ml-40 mt-20 cursor-pointer group overflow-hidden relative text-gray-50 h-[600px] w-[400px]  rounded-2xl hover:duration-700 duration-700" data-aos="flip-right" data-aos-delay='300'>
+        <div className="relative group duration-500 ml-40 mt-20 cursor-pointer group overflow-hidden relative text-gray-50 h-[600px] w-[400px]  rounded-2xl hover:duration-700 duration-700" data-aos="flip-up" data-aos-delay='300'>
+        <div className="w-[600px] h-[300px] bg-fixed text-gray-800">
+          <img src='/qtivate1.png' className='w-[400px] h-[600px]'></img>
+          <div className="flex flex-row justify-between">
+            <svg className="fill-current stroke-current w-8 h-8 p-2 hover:bg-lime-200  rounded-full m-1" height="100" preserveAspectRatio="xMidYMid meet" viewBox="0 0 100 100" width="100" x="0" xmlns="http://www.w3.org/2000/svg" y="0">
+              <path className="" d="M15.8,32.9V15.8m0,0H32.9m-17.1,0L37.2,37.2m47-4.3V15.8m0,0H67.1m17.1,0L62.8,37.2m-47,29.9V84.2m0,0H32.9m-17.1,0L37.2,62.8m47,21.4L62.8,62.8M84.2,84.2V67.1m0,17.1H67.1" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="8">
+              </path>
+            </svg>
+            <svg className="fill-current stroke-current w-8 h-8 p-2 m-1 hover:bg-lime-200 rounded-full" height="100" preserveAspectRatio="xMidYMid meet" viewBox="0 0 100 100" width="100" x="0" xmlns="http://www.w3.org/2000/svg" y="0">
+              <path className="svg-stroke-primary" d="M50,17.4h0M50,50h0m0,32.6h0M50,22a4.7,4.7,0,1,1,4.7-4.6A4.7,4.7,0,0,1,50,22Zm0,32.7A4.7,4.7,0,1,1,54.7,50,4.7,4.7,0,0,1,50,54.7Zm0,32.6a4.7,4.7,0,1,1,4.7-4.7A4.7,4.7,0,0,1,50,87.3Z" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="8">
+              </path>
+            </svg>
+          </div>
+        </div>
+        <div className="absolute bg-gray-100 -bottom-24 w-[600px]  h-[170px] p-3 flex flex-col gap-1 group-hover:-bottom-0 group-hover:duration-600 duration-500">
+          <span className="text-purple-500 font-bold text-xs">React Native e HTML/CSS</span>
+          <span className="text-gray-800 font-bold text-3xl">Qtivate</span>
+          <p className="text-neutral-800 w-[395px]">Aplicativo realizado para projeto na universidade, com objetivo em realizar chamadas escolares e em eventos através de leituras em QR code</p>
+        </div>
+      </div>
+      <div className="relative group duration-500 ml-40 mt-20 cursor-pointer group overflow-hidden relative text-gray-50 h-[600px] w-[400px]  rounded-2xl hover:duration-700 duration-700" data-aos="flip-right" data-aos-delay='600'>
           <div className="w-[600px] h-[300px] bg-fixed text-gray-800" >
             <img src='/bees.png' className='w-[400px] h-[600px]'></img>
             <div className="flex flex-row justify-between">
@@ -145,15 +167,21 @@ const HomePage: React.FC = () => {
               </svg>
             </div>
           </div>
-          <div className="absolute bg-gray-50 -bottom-24 w-[600px]  h-[170px] p-3 flex flex-col gap-1 group-hover:-bottom-0 group-hover:duration-600 duration-500">
-            <span className="text-purple-500 font-bold text-xs">React</span>
-            <span className="text-gray-800 font-bold text-3xl">Cheat Sheet</span>
-            <p className="text-neutral-800">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <div className="absolute bg-gray-100 -bottom-24 w-[500px]  h-[170px] p-3 flex flex-col gap-1 group-hover:-bottom-0 group-hover:duration-600 duration-500">
+            <span className="text-purple-500 font-bold text-sm">React Native</span>
+            <span className="text-gray-800 font-bold text-3xl">E-hive</span>
+            <p className="text-neutral-900 w-[395px]  ml-[-5px]">Aplicativo criado para auxiliar a manutenção de colmeias, onde é possivel monitorar
+              peso e temperatura das colmeias e caso algum valor ultrapasse o recomendado um aviso é emitido ao usuário
+            </p>
           </div>
         </div>
-        <div className="relative group duration-500 ml-40 mt-20 cursor-pointer group overflow-hidden relative text-gray-50 h-[600px] w-[400px]  rounded-2xl hover:duration-700 duration-700" data-aos="flip-up" data-aos-delay='600'>
+
+      </div>
+      <div  id='segunda linha' className='flex space-x-[500px] ml-[100px]'>
+          {/* Primeiro container, bee hive */}
+          <div className="relative group duration-500 ml-40 mt-20 cursor-pointer group overflow-hidden relative text-gray-50 h-[600px] w-[400px]  rounded-2xl hover:duration-700 duration-700" data-aos="flip-left" data-aos-delay='900'>
         <div className="w-[600px] h-[300px] bg-fixed text-gray-800">
-          <img src='/bees.png' className='w-[400px] h-[600px]'></img>
+          <img src='/bluezone.png' className='w-[400px] h-[600px]'></img>
           <div className="flex flex-row justify-between">
             <svg className="fill-current stroke-current w-8 h-8 p-2 hover:bg-lime-200  rounded-full m-1" height="100" preserveAspectRatio="xMidYMid meet" viewBox="0 0 100 100" width="100" x="0" xmlns="http://www.w3.org/2000/svg" y="0">
               <path className="" d="M15.8,32.9V15.8m0,0H32.9m-17.1,0L37.2,37.2m47-4.3V15.8m0,0H67.1m17.1,0L62.8,37.2m-47,29.9V84.2m0,0H32.9m-17.1,0L37.2,62.8m47,21.4L62.8,62.8M84.2,84.2V67.1m0,17.1H67.1" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="8">
@@ -165,37 +193,32 @@ const HomePage: React.FC = () => {
             </svg>
           </div>
         </div>
-        <div className="absolute bg-gray-50 -bottom-24 w-[600px]  h-[170px] p-3 flex flex-col gap-1 group-hover:-bottom-0 group-hover:duration-600 duration-500">
-          <span className="text-purple-500 font-bold text-xs">TAILWIND</span>
-          <span className="text-gray-800 font-bold text-3xl">Cheat Sheet</span>
-          <p className="text-neutral-800">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacus purus, dapibus at elit quis, hendrerit finibus felis. Aliquam dignissim elit 
-            in diam viverra ullamcorper. Vivamus massa lectus, lacinia ac ante eu, tincidunt iaculis velit. Suspendisse mauris ante, venenatis vel sollicitudin in, pharetra id turpis.
-             Mauris lobortis lacus in commodo venenatis. Nunc cursus ex malesuada elit convallis pharetra. Morbi sollicitudin posuere rutrum. Maecenas non eleifend ex. Fusce suscipit ullamcorper
-              quam, eu pretium tellus eleifend ut. Praesent sed bibendum nunc. Ut mattis consectetur fringilla. Phasellus porta massa ut suscipit fringilla..</p>
+        <div className="absolute bg-gray-100 -bottom-24 w-[600px]  h-[170px] p-3 flex flex-col gap-1 group-hover:-bottom-0 group-hover:duration-600 duration-500">
+          <span className="text-purple-500 font-bold text-xs">Kotlin</span>
+          <span className="text-gray-800 font-bold text-3xl">BlueZone</span>
+          <p className="text-neutral-800 w-[395px] ml-[-5px]">Aplicativo realizado para usuários visualizarem e comprarem vagas de zona azul disponíveis próximos a sua localização atual ou em um destino que você desejar</p>
         </div>
       </div>
-      <div className="relative group duration-500 ml-40 mt-20 cursor-pointer group overflow-hidden relative text-gray-50 h-[600px] w-[400px]  rounded-2xl hover:duration-700 duration-700" data-aos="flip-left" data-aos-delay='900'>
-        <div className="w-[600px] h-[300px] bg-fixed text-gray-800">
-          <img src='/bees.png' className='w-[400px] h-[600px]'></img>
-          <div className="flex flex-row justify-between">
-            <svg className="fill-current stroke-current w-8 h-8 p-2 hover:bg-lime-200  rounded-full m-1" height="100" preserveAspectRatio="xMidYMid meet" viewBox="0 0 100 100" width="100" x="0" xmlns="http://www.w3.org/2000/svg" y="0">
-              <path className="" d="M15.8,32.9V15.8m0,0H32.9m-17.1,0L37.2,37.2m47-4.3V15.8m0,0H67.1m17.1,0L62.8,37.2m-47,29.9V84.2m0,0H32.9m-17.1,0L37.2,62.8m47,21.4L62.8,62.8M84.2,84.2V67.1m0,17.1H67.1" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="8">
-              </path>
-            </svg>
-            <svg className="fill-current stroke-current w-8 h-8 p-2 m-1 hover:bg-lime-200 rounded-full" height="100" preserveAspectRatio="xMidYMid meet" viewBox="0 0 100 100" width="100" x="0" xmlns="http://www.w3.org/2000/svg" y="0">
-              <path className="svg-stroke-primary" d="M50,17.4h0M50,50h0m0,32.6h0M50,22a4.7,4.7,0,1,1,4.7-4.6A4.7,4.7,0,0,1,50,22Zm0,32.7A4.7,4.7,0,1,1,54.7,50,4.7,4.7,0,0,1,50,54.7Zm0,32.6a4.7,4.7,0,1,1,4.7-4.7A4.7,4.7,0,0,1,50,87.3Z" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="8">
-              </path>
-            </svg>
+      <div className="relative group duration-500 ml-40 mt-20 cursor-pointer group overflow-hidden relative text-gray-50 h-[600px] w-[400px]  rounded-2xl hover:duration-700 duration-700" data-aos="flip-right" data-aos-delay='600'>
+          <div className="w-[600px] h-[300px] bg-fixed text-gray-800" >
+            <img src='/port.png' className='w-[400px] h-[600px]'></img>
+            <div className="flex flex-row justify-between">
+              <svg className="fill-current stroke-current w-8 h-8 p-2 hover:bg-lime-200  rounded-full m-1" height="100" preserveAspectRatio="xMidYMid meet" viewBox="0 0 100 100" width="100" x="0" xmlns="http://www.w3.org/2000/svg" y="0">
+                <path className="" d="M15.8,32.9V15.8m0,0H32.9m-17.1,0L37.2,37.2m47-4.3V15.8m0,0H67.1m17.1,0L62.8,37.2m-47,29.9V84.2m0,0H32.9m-17.1,0L37.2,62.8m47,21.4L62.8,62.8M84.2,84.2V67.1m0,17.1H67.1" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="8">
+                </path>
+              </svg>
+              <svg className="fill-current stroke-current w-8 h-8 p-2 m-1 hover:bg-lime-200 rounded-full" height="100" preserveAspectRatio="xMidYMid meet" viewBox="0 0 100 100" width="100" x="0" xmlns="http://www.w3.org/2000/svg" y="0">
+                <path className="svg-stroke-primary" d="M50,17.4h0M50,50h0m0,32.6h0M50,22a4.7,4.7,0,1,1,4.7-4.6A4.7,4.7,0,0,1,50,22Zm0,32.7A4.7,4.7,0,1,1,54.7,50,4.7,4.7,0,0,1,50,54.7Zm0,32.6a4.7,4.7,0,1,1,4.7-4.7A4.7,4.7,0,0,1,50,87.3Z" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="8">
+                </path>
+              </svg>
+            </div>
+          </div>
+          <div className="absolute bg-gray-100 -bottom-24 w-[500px]  h-[170px] p-3 flex flex-col gap-1 group-hover:-bottom-0 group-hover:duration-600 duration-500">
+            <span className="text-purple-500 font-bold text-sm">Tailwind/CSS</span>
+            <span className="text-gray-800 font-bold text-3xl">Portfolio</span>
+            <p className="text-neutral-900 w-[395px]  ml-[-5px]">Site desenvolvido por mim com iniciativa de estudo que acabou se tornando um pequeno portfolio de exibição dos meus projetos universitários</p>
           </div>
         </div>
-        <div className="absolute bg-gray-50 -bottom-24 w-[600px]  h-[170px] p-3 flex flex-col gap-1 group-hover:-bottom-0 group-hover:duration-600 duration-500">
-          <span className="text-purple-500 font-bold text-xs">React</span>
-          <span className="text-gray-800 font-bold text-3xl">Cheat Sheet</span>
-          <p className="text-neutral-800">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacus purus, dapibus at elit quis, hendrerit finibus felis.
-             Aliquam dignissim elit in diam viverra ullamcorper. Vivamus massa lectus, lacinia ac ante eu, tincidunt iaculis velit. Suspendisse mauris ante, venenatis vel sollicitudin in, pharetra id turpis.
-              Mauris lobortis lacus in commodo venenatis.</p>
-        </div>
-      </div>
       </div>
       </div>
       </div>

@@ -5,7 +5,7 @@ import WaveSVG from './onda';
 const Aside: React.FC = () => {
   return (
     <>
-<aside className="absolute right-8 mt-[200px] rounded-full border-2 border-white p-2 z-40">
+<aside className="absolute right-8 mt-[300px] rounded-full border-2 border-white p-2 z-40">
     <nav>
       <ul className="text-2xl">
       <li>
