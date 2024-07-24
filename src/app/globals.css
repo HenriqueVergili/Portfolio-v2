@@ -1,0 +1,376 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+.animado {
+  min-height: 1000px;
+  min-width: 1872px;
+  background: lightblue;
+  position: relative;
+  overflow: hidden;
+}
+
+.animado::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, #581c87 10%, transparent 20%),
+    radial-gradient(circle, transparent 10%, #581c87 20%);
+  background-size: 30px 30px; /* Adjust the size of the pattern */
+  animation: moveBackground 8s linear infinite; /* Adjust the animation duration and timing function */
+}
+
+.bg-gradient-custom {
+ min-height: 966px;
+  min-width: 1872px;
+  --bg: radial-gradient(#000 5%, #0000 6%);
+  --size: 3rem;
+  /* Add your background pattern here */
+  /* background-color: lightblue; */
+  background-image: radial-gradient(#000 5%, #581c87 6%),
+    radial-gradient(#000 5%, #0000 6%);
+  background-position: 0 0, calc(var(--size) / 2) calc(var(--size) / 2);
+  background-size: var(--size) var(--size);
+
+}
+.bg-gradient-sobre {
+  background: linear-gradient(75deg, rgba(0,0,0,0) 10%, rgba(88,28,135,1) 100%);
+  background-size:auto;
+  min-height: 1100px;
+  min-width: 1872px;
+}
+.bg-sobre {
+  min-height: 1100px;
+  min-width: 1872px;
+  background-color: black;
+}
+
+.bg-gradient-qualidade {
+  background: linear-gradient(105deg, rgba(0,0,0,1) 50%, rgba(88,28,135,1) 0%);
+  background-size: cover;
+ min-height: 966px;
+  min-width: 1872px;
+}
+.bg-gradient-formacao {
+  background: linear-gradient(300deg, rgba(0,0,0,0) 10%, rgba(88,28,135,1) 100%);
+  background-size: cover;
+ min-height: 1100px;
+  min-width: 1872px;
+} 
+
+.bg-contato {
+  background-color: rgba(88,28,135,1);
+  background-size: cover;
+ min-height: 966px;
+  min-width: 1872px;
+  
+} 
+.bg-swirl {
+ min-height: 1100px;
+  min-width: 1872px;
+  --s: 140px; /* control the size */
+
+  --_g: #0000 52%, #170409 /* first color */ 54% 57%, #0000 59%;
+  background: radial-gradient(farthest-side at -33.33% 50%, var(--_g)) 0
+      calc(var(--s) / 2),
+    radial-gradient(farthest-side at 50% 133.33%, var(--_g)) calc(var(--s) / 2)
+      0,
+    radial-gradient(farthest-side at 133.33% 50%, var(--_g)),
+    radial-gradient(farthest-side at 50% -33.33%, var(--_g)), #581c87; /* second color */
+  background-size: calc(var(--s) / 4.667) var(--s),
+    var(--s) calc(var(--s) / 4.667);
+}
+
+.bg-projetos {
+ min-height: 1100px;
+  min-width: 1872px;
+  --s: 100px; /* control the size */
+  --c1:#581c87;
+  --c2: #000000;
+
+  --_g: var(--c2) 6% 14%, var(--c1) 16% 24%, var(--c2) 26% 34%,
+    var(--c1) 36% 44%, var(--c2) 46% 54%, var(--c1) 56% 64%, var(--c2) 66% 74%,
+    var(--c1) 76% 84%, var(--c2) 86% 94%;
+  background: radial-gradient(
+      100% 100% at 100% 0,
+      var(--c1) 4%,
+      var(--_g),
+      #0008 96%,
+      #0000
+    ),
+    radial-gradient(
+        100% 100% at 0 100%,
+        #0000,
+        #0008 4%,
+        var(--_g),
+        var(--c1) 96%
+      )
+      var(--c1);
+  background-size: var(--s) var(--s);
+}
+
+.bg-projetos1 {
+  background-image: url("../../public/fundo-faixa.jpg");
+  background-size: cover;
+ min-height: 1100px;
+  min-width: 1872px;
+}
+.link-wrapper .link-underline {
+  position: relative;
+  width: 100%;
+  height: var(--border);
+  margin-bottom: 6px;
+  bottom: 0;
+  left: 0;
+  background-color: #606887;
+  transform-origin: bottom right;
+  transition: transform .25s ease-out;
+}
+
+.glow-overlay {
+  --glow-size: 25rem;
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  user-select: none;
+  opacity: var(--glow-opacity, 0);
+  mask: radial-gradient(
+    var(--glow-size) var(--glow-size) at var(--glow-x) var(--glow-y),
+    var(--glow-color) 1%,
+    transparent 50%
+  );
+  transition: 400ms mask ease;
+  will-change: mask;
+}
+.aos-slide-down-custom {
+  transform: translateY(-400px);
+  opacity: 0;
+  transition: transform 2s ease-in-out; /* duração e estilo da transição */
+}
+[data-aos="custom-slide-down"].aos-animate {
+  opacity: 1;
+  transform: translateY(-100%); /* animação atravessando a tela */
+}
+
+@keyframes moveBackground {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(20%, 20%);
+  }
+}
+
+@keyframes fade-in {
+  0% {
+      opacity: 0
+  }
+
+  to {
+      opacity: 1
+  }
+}
+
+.animate-\[fade-in_350ms_ease-in-out\] {
+  animation: fade-in .35s ease-in-out
+}
+
+@keyframes flash {
+  0%,50%,to {
+      opacity: 1
+  }
+
+  25%,75% {
+      opacity: 0
+  }
+}
+
+.animate-\[flash_0\.7s\] {
+  animation: flash .7s
+}
+
+@keyframes fly-in-down {
+  0% {
+      opacity: 0;
+      transform: translate3d(0,-1500px,0);
+      transition-timing-function: cubic-bezier(.215,.61,.355,1)
+  }
+
+  60% {
+      opacity: 1;
+      transform: translate3d(0,25px,0)
+  }
+
+  75% {
+      transform: translate3d(0,-10px,0)
+  }
+
+  90% {
+      transform: translate3d(0,5px,0)
+  }
+
+  to {
+      transform: none
+  }
+}
+@keyframes fly-in-left {
+  0% {
+      opacity: 0;
+      transform: translate3d(1500px,0,0);
+      transition-timing-function: cubic-bezier(.215,.61,.355,1)
+  }
+
+  60% {
+      opacity: 1;
+      transform: translate3d(-25px,0,0)
+  }
+
+  75% {
+      transform: translate3d(10px,0,0)
+  }
+
+  90% {
+      transform: translate3d(-5px,0,0)
+  }
+
+  to {
+      transform: none
+  }
+}
+@keyframes fly-in-right {
+  0% {
+      opacity: 0;
+      transform: translate3d(-1500px,0,0);
+      transition-timing-function: cubic-bezier(.215,.61,.355,1)
+  }
+
+  60% {
+      opacity: 1;
+      transform: translate3d(25px,0,0)
+  }
+
+  75% {
+      transform: translate3d(-10px,0,0)
+  }
+
+  90% {
+      transform: translate3d(5px,0,0)
+  }
+
+  to {
+      transform: none
+  }
+}
+
+@keyframes tada {
+  0% {
+      transform: scaleX(1)
+  }
+
+  10%,20% {
+      transform: scale3d(.9,.9,.9)rotate(-3deg)
+  }
+
+  30%,50%,70%,90% {
+      transform: scale3d(1.1,1.1,1.1)rotate(3deg)
+  }
+
+  40%,60%,80% {
+      transform: scale3d(1.1,1.1,1.1)rotate(-3deg)
+  }
+
+  to {
+      transform: scaleX(1)
+  }
+}
+
+@keyframes drop-in {
+  0% {
+      opacity: 0;
+      transform: scale(0);
+      animation-timing-function: cubic-bezier(.34,1.61,.7,1)
+  }
+
+  to {
+      opacity: 1;
+      transform: scale(1)
+  }
+}
+
+
+.animate-\[spinner-grow_0\.75s_linear_infinite\] {
+  animation: spinner-grow .75s linear infinite
+}
+
+@keyframes spinner-grow {
+  0% {
+      transform: scale(0)
+  }
+
+  50% {
+      transform: none;
+      opacity: 1
+  }
+}
+
+@keyframes fade-in-right {
+  0% {
+      opacity: 0;
+      transform: translate3d(100%,0,0)
+  }
+
+  to {
+      opacity: 1;
+      transform: translateZ(0)
+  }
+}
+
+.animate-\[fade-in-right_1s_ease-in-out\] {
+  animation: fade-in-right 1s ease-in-out
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.custom-list {
+  list-style-position: inside;
+}
+.custom-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.custom-list li::before {
+  content: "•"; /* Pode ser alterado para outros símbolos ou imagens */
+  margin-left: 10px; /* Ajuste conforme necessário */
+}
+
