@@ -27,11 +27,11 @@ const HomePage: React.FC = () => {
       <div id="home" className='bg-gradient-custom container'>
       <Aside/>
         <div className='flex justify-between'>
-          <div className='animate-[tada_1s_ease-in-out] mt-32'>
-            <p className='text-7xl font-bold ml-[200px] mt-[100px] [text-shadow:_0_8px_0_rgb(0_0_0_/_40%)]'> Olá! <br></br>Sou o Henrique, <br></br> desenvolvedor front-end</p>
+          <div className='animate-[tada_1s_ease-in-out] mt-32' >
+            <p className='text-8xl font-bold ml-[200px] mt-[150px] [text-shadow:_0_8px_0_rgb(0_0_0_/_40%)]'>Olá<br></br>Sou o  <span className='text-green-400'> Henrique</span>,<br></br> desenvolvedor front-end</p>
             <p className='ml-[200px] text-4xl w-[600px] mt-4 [text-shadow:_0_-5px_0_rgb(0_0_0_/_40%)]'>Apaixonado por criar e estilizar sites e aplicativos mobile, com proficiência em tailwind, css, html e react.</p>
           </div>
-          <div className='mr-48 mt-32'>
+          <div className='mr-40 mt-32'>
               <nav>
                 <ul className="text-7xl font-thin space-x-0 space-y-2 mr-[181px] mt-[131px] [text-shadow:_0_8px_0_rgb(0_0_0_/_40%)] animate-[spinner-grow_1s_ease-in-out]">
                 <li><a href='#sobre' className=" hover:before:scale-x-100 hover:before:origin-left relative before:w-full before:h-1 before:origin-right before:transition-transform before:duration-300 before:scale-x-0 before:bg-green-400 before:absolute before:left-0 before:bottom-0 ">Sobre</a></li>
