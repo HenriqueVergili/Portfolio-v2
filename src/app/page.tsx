@@ -131,7 +131,7 @@ const HomePage: React.FC = () => {
       <div id="projetos">
       <div className='container bg-swirl'>
       <Onda2/>
-        <div id='primeira linha' className='flex mt-[-80px] space-x-[500px] ml-[100px]' >
+        <div id='primeira linha' className='flex mt-[-80px] space-x-[400px] ml-[200px]' >
           {/* Primeiro container, bee hive */}
         <div className="relative group duration-500 ml-40 mt-20 cursor-pointer group overflow-hidden relative text-gray-50 h-[600px] w-[400px]  rounded-2xl hover:duration-700 duration-700" data-aos="flip-up" data-aos-delay='300'>
         <div className="w-[600px] h-[300px] bg-fixed text-gray-800">
@@ -177,7 +177,7 @@ const HomePage: React.FC = () => {
         </div>
 
       </div>
-      <div  id='segunda linha' className='flex space-x-[500px] ml-[100px]'>
+      <div  id='segunda linha' className='flex space-x-[400px] ml-[200px]'>
           {/* Primeiro container, bee hive */}
           <div className="relative group duration-500 ml-40 mt-20 cursor-pointer group overflow-hidden relative text-gray-50 h-[600px] w-[400px]  rounded-2xl hover:duration-700 duration-700" data-aos="flip-left" data-aos-delay='900'>
         <div className="w-[600px] h-[300px] bg-fixed text-gray-800">
@@ -226,20 +226,20 @@ const HomePage: React.FC = () => {
         <div className='animado container'>
           <div className='text-center' >
             <div>
-              <p className='text-7xl font-bold  mt-32' data-aos="fade-right" data-aos-delay='300'> Principais formações</p>
+              <p className='text-7xl font-bold  mt-32' data-aos="slide-right" data-aos-delay='300'> Principais formações</p>
             </div>
             <div className='mt-24 ml-[320px] list-disc' >
-              <li className='text-4xl text-left mt-4 '  data-aos="fade-right" data-aos-delay='500'>Pontifícia Universidade Católica de Campinas</li>
-              <p className='text-2xl mt-4 text-left ml-20 '  data-aos="fade-right" data-aos-delay='500'>Bacharelado em Engenharia de Software, 2021-2024</p>
-              <li className='text-4xl text-left mt-4 '  data-aos="fade-right" data-aos-delay='800'>Ensino de Inglês CNA</li>
-              <p className='text-2xl mt-4 text-left ml-20 '  data-aos="fade-right" data-aos-delay='800'>Curso finalizado em 2017, realizado até o último módulo</p>
+              <li className='text-4xl text-left mt-4 '  data-aos="slide-right" data-aos-delay='500'>Pontifícia Universidade Católica de Campinas</li>
+              <p className='text-2xl mt-4 text-left ml-20 '  data-aos="slide-right" data-aos-delay='500'>Bacharelado em Engenharia de Software, 2021-2024</p>
+              <li className='text-4xl text-left mt-4 '  data-aos="slide-right" data-aos-delay='800'>Ensino de Inglês CNA</li>
+              <p className='text-2xl mt-4 text-left ml-20 '  data-aos="slide-right" data-aos-delay='800'>Curso finalizado em 2017, realizado até o último módulo</p>
             </div>
             <div>
-              <p className='text-7xl font-bold mt-16'  data-aos="fade-right" data-aos-delay='900'>Licenças e Certificados</p>
+              <p className='text-7xl font-bold mt-16'  data-aos="slide-right" data-aos-delay='900'>Licenças e Certificados</p>
             </div>
             <div className='mt-20 ml-[320px] list-disc' >
-              <li className='text-4xl text-left mt-4'  data-aos="fade-right" data-aos-delay='950' >Certificado de Inglês Cambridge</li>
-              <p className='text-2xl mt-4 text-left ml-20'  data-aos="fade-right" data-aos-delay='1000' >Nível C2, conquistado em 2018</p>
+              <li className='text-4xl text-left mt-4'  data-aos="slide-right" data-aos-delay='950' >Certificado de Inglês Cambridge</li>
+              <p className='text-2xl mt-4 text-left ml-20'  data-aos="slide-right" data-aos-delay='1000' >Nível C2, conquistado em 2018</p>
             </div>
           </div>
         </div>
@@ -250,24 +250,24 @@ const HomePage: React.FC = () => {
         <div className='[text-shadow:_-2px_5px_0_rgb(200_100_400_/_50%)] mt-52'>
           <p className='text-5xl font-bold ml-[380px] ' data-aos="fade-right" data-aos-delay='200'>Habilidades de programação</p>
         <div className='mt-24 ml-[320px] list-disc'>
-          <li className='text-4xl text-left mt-4' data-aos="slide-right" data-aos-delay='300'> React</li>
-          <li className='text-4xl text-left mt-4' data-aos="slide-right" data-aos-delay='350'>React Native</li>
-          <li className='text-4xl text-left mt-4' data-aos="slide-right" data-aos-delay='400'>Tailwind</li>
-          <li className='text-4xl text-left mt-4' data-aos="slide-right" data-aos-delay='450'>Html</li>
-          <li className='text-4xl text-left mt-4' data-aos="slide-right" data-aos-delay='500'>CSS</li>
-          <li className='text-4xl text-left mt-4' data-aos="slide-right" data-aos-delay='550'>Flutter</li>
-          <li className='text-4xl text-left mt-4' data-aos="slide-right" data-aos-delay='600'>mySQL</li>
-          <li className='text-4xl text-left mt-4' data-aos="slide-right" data-aos-delay='650'>MongoDB</li>
+          <li className='text-4xl text-left mt-4' data-aos="fade-right" data-aos-delay='300'> React</li>
+          <li className='text-4xl text-left mt-4' data-aos="fade-right" data-aos-delay='350'>React Native</li>
+          <li className='text-4xl text-left mt-4' data-aos="fade-right" data-aos-delay='400'>Tailwind</li>
+          <li className='text-4xl text-left mt-4' data-aos="fade-right" data-aos-delay='450'>Html</li>
+          <li className='text-4xl text-left mt-4' data-aos="fade-right" data-aos-delay='500'>CSS</li>
+          <li className='text-4xl text-left mt-4' data-aos="fade-right" data-aos-delay='550'>Flutter</li>
+          <li className='text-4xl text-left mt-4' data-aos="fade-right" data-aos-delay='600'>mySQL</li>
+          <li className='text-4xl text-left mt-4' data-aos="fade-right" data-aos-delay='650'>MongoDB</li>
         </div>
         </div>
-        <div className='mr-[320px] mt-[-40px] [text-shadow:_4px_6px_0_rgb(0_0_0_/_60%)] mt-[230px] '>
+        <div className='mr-[320px] [text-shadow:_4px_6px_0_rgb(0_0_0_/_60%)] mt-[230px]'>
           <p className='text-5xl font-bold 'data-aos="fade-left" data-aos-delay='200'>Soft Skills</p>
-          <div className='mt-20 text-right' data-aos="fade-left" data-aos-delay='200'>
-            <li className='text-4xl text-right ml-[146px] mt-4 flex 'data-aos="slide-left"  data-aos-delay='350' >Comunicação<span className="ml-2">•</span></li>
-            <li className='text-4xl  ml-[66px] mt-4 flex ' data-aos="slide-left"  data-aos-delay='400' >Trabalho em Equipe<span className="ml-2">•</span></li>
-            <li className='text-4xl ml-[133px] mt-4 flex ' data-aos="slide-left"  data-aos-delay='450' >Adaptabilidade<span className="ml-2">•</span></li>
-            <li className='text-4xl  mt-4 flex ' data-aos="slide-left"  data-aos-delay='500' >Resolução de Problemas<span className="ml-2">•</span></li>
-            <li className='text-4xl ml-[71px] mt-4 flex ' data-aos="slide-left"  data-aos-delay='550' >Trabalho em Equipe<span className="ml-2">•</span></li>
+          <div className='mt-20'>
+            <li className='text-4xl ml-[146px] mt-4 flex 'data-aos="fade-left"  data-aos-delay='350'  >Comunicação •</li>
+            <li className='text-4xl  ml-[66px] mt-4 flex ' data-aos="fade-left"  data-aos-delay='400' >Trabalho em Equipe •</li>
+            <li className='text-4xl ml-[133px] mt-4 flex ' data-aos="fade-left"  data-aos-delay='450' >Adaptabilidade •</li>
+            <li className='text-4xl  mt-4 flex ' data-aos="fade-left"  data-aos-delay='500' >Resolução de Problemas •</li>
+            <li className='text-4xl ml-[71px] mt-4 flex ' data-aos="fade-left"  data-aos-delay='550' >Trabalho em Equipe •</li>
           </div>
         </div>
       </div>

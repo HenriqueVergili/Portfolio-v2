@@ -27,7 +27,7 @@ body {
 }
 .animado {
   min-height: 1000px;
-  min-width: 1872px;
+  min-width: 1855px;
   background: lightblue;
   position: relative;
   overflow: hidden;
@@ -48,7 +48,7 @@ body {
 
 .bg-gradient-custom {
  min-height: 966px;
-  min-width: 1872px;
+  min-width: 1855px;
   --bg: radial-gradient(#000 5%, #0000 6%);
   --size: 3rem;
   /* Add your background pattern here */
@@ -63,11 +63,11 @@ body {
   background: linear-gradient(75deg, rgba(0,0,0,0) 10%, rgba(88,28,135,1) 100%);
   background-size:auto;
   min-height: 1100px;
-  min-width: 1872px;
+  min-width: 1855px;
 }
 .bg-sobre {
   min-height: 1100px;
-  min-width: 1872px;
+  min-width: 1855px;
   background-color: black;
 }
 
@@ -75,25 +75,25 @@ body {
   background: linear-gradient(105deg, rgba(0,0,0,1) 50%, rgba(88,28,135,1) 0%);
   background-size: cover;
  min-height: 966px;
-  min-width: 1872px;
+  min-width: 1855px;
 }
 .bg-gradient-formacao {
   background: linear-gradient(300deg, rgba(0,0,0,0) 10%, rgba(88,28,135,1) 100%);
   background-size: cover;
  min-height: 1100px;
-  min-width: 1872px;
+  min-width: 1855px;
 } 
 
 .bg-contato {
   background-color: rgba(88,28,135,1);
   background-size: cover;
  min-height: 966px;
-  min-width: 1872px;
+  min-width: 1855px;
   
 } 
 .bg-swirl {
  min-height: 1570px;
-  min-width: 1872px;
+  min-width: 1855px;
   --s: 140px; /* control the size */
 
   --_g: #0000 52%, #170409 /* first color */ 54% 57%, #0000 59%;
@@ -109,7 +109,7 @@ body {
 
 .bg-projetos {
  min-height: 1100px;
-  min-width: 1872px;
+  min-width: 1855px;
   --s: 100px; /* control the size */
   --c1:#581c87;
   --c2: #000000;
@@ -139,7 +139,7 @@ body {
   background-image: url("../../public/fundo-faixa.jpg");
   background-size: cover;
  min-height: 1100px;
-  min-width: 1872px;
+  min-width: 1855px;
 }
 .link-wrapper .link-underline {
   position: relative;
