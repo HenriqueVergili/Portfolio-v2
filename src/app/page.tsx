@@ -260,14 +260,14 @@ const HomePage: React.FC = () => {
           <li className='text-4xl text-left mt-4' data-aos="fade-right" data-aos-delay='650'>MongoDB</li>
         </div>
         </div>
-        <div className='mr-[320px] [text-shadow:_4px_6px_0_rgb(0_0_0_/_60%)] mt-[230px]'>
+        <div className='mr-[300px] [text-shadow:_4px_6px_0_rgb(0_0_0_/_60%)] mt-[230px]'>
           <p className='text-5xl font-bold 'data-aos="fade-left" data-aos-delay='200'>Soft Skills</p>
           <div className='mt-20'>
-            <li className='text-4xl ml-[146px] mt-4 flex 'data-aos="fade-left"  data-aos-delay='350'  >Comunicação •</li>
+            <li className='text-4xl ml-[146px] mt-4 flex text-right 'data-aos="fade-left"  data-aos-delay='350'  >Comunicação •</li>
             <li className='text-4xl  ml-[66px] mt-4 flex ' data-aos="fade-left"  data-aos-delay='400' >Trabalho em Equipe •</li>
             <li className='text-4xl ml-[133px] mt-4 flex ' data-aos="fade-left"  data-aos-delay='450' >Adaptabilidade •</li>
             <li className='text-4xl  mt-4 flex ' data-aos="fade-left"  data-aos-delay='500' >Resolução de Problemas •</li>
-            <li className='text-4xl ml-[71px] mt-4 flex ' data-aos="fade-left"  data-aos-delay='550' >Trabalho em Equipe •</li>
+            <li className='text-4xl ml-[174px] mt-4 flex'data-aos="fade-left"  data-aos-delay='550'  >Criatividade •</li>
           </div>
         </div>
       </div>
