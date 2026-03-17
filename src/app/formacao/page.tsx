@@ -1,8 +1,15 @@
-// pages/index.tsx
-import React from 'react';
+'use client';
+
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import Header from '../components/header';
 
 const HomePage: React.FC = () => {
+  useEffect(() => {
+    AOS.init({ duration: 700, once: false });
+  }, []);
+
   return (
     <div className='bg-gradient-formacao container'>
       <Header/>
@@ -21,7 +28,10 @@ const HomePage: React.FC = () => {
         </div>
         <div className='mt-20 ml-[320px] list-disc'>
           <li className='text-4xl text-left mt-4 animate-slidein opacity-0 [--slidein-delay:1500ms]'>Certificado de Inglês Cambridge</li>
-          <p className='text-2xl mt-4 text-left ml-20 animate-slidein opacity-0 [--slidein-delay:1500ms]'>Nível C2, conquistado em 2018</p>
+          <p className='text-2xl mt-4 text-left ml-20 animate-slidein opacity-0 [--slidein-delay:1500ms]'>Nível C1, conquistado em 2018</p>
+          <li className='text-4xl text-left mt-4 animate-slidein opacity-0 [--slidein-delay:1500ms]'>Certificado de React</li>
+          <a href="/ReactCertificate1.pdf" target="_blank" rel="noopener noreferrer" className='text-2xl mt-4 text-left ml-20 animate-slidein opacity-0 [--slidein-delay:1500ms]'>React: desenvolvendo com JavaScript</a>
+          <a href="/ReactCertificate2.pdf" target="_blank" rel="noopener noreferrer" className='text-2xl mt-4 text-left ml-20 animate-slidein opacity-0 [--slidein-delay:1500ms]'>React: como os componentes funcionam</a>
         </div>
       </div>
     </div>
